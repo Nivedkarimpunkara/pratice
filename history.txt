@@ -1,0 +1,326 @@
+    1  podman build --layers=false -t acme/jboss7-eap.01 .
+    2  podman run -d --name acme -p -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+    3  podman images
+    4  podman run -d --name acme -p -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+    5  pwd
+    6  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+    7  podman exec -it acme bash
+    8  vim Dockerfile 
+    9  podman rm -a
+   10  podman rm -a -f 
+   11  podman rmi -a -f 
+   12  ll
+   13  mv jboss.7.4.zip  jboss.zip
+   14  vim Dockerfile 
+   15  podman build --layers=false -t acme/jboss7-eap.01 .
+   16  vim Dockerfile 
+   17  podman build --layers=false -t acme/jboss7-eap.01 .
+   18  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+   19  podman exec -it acme bash
+   20  vim Dockerfile 
+   21  podman stop -a
+   22  podman rm -a
+   23  podman rmi -a
+   24  podman build --layers=false -t acme/jboss7-eap.01 .
+   25  ll
+   26  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+   27  podman exec -it acme bash
+   28  vim Dockerfile 
+   29  podman stop -a
+   30  podman rmi -a
+   31  podman rm -a
+   32  podman rmi -a
+   33  podman build --layers=false -t acme/jboss7-eap.01 .
+   34  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+   35  podman exec -it acme bash
+   36  podman stop -a
+   37  podman rm -a
+   38  podman rmi -a
+   39  vim Dockerfile 
+   40  podman build --layers=false -t acme/jboss7-eap.01 .
+   41  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+   42  podman ps
+   43  podman logs --tail acme
+   44  podman logs --tail 10 acme
+   45  podman ps
+   46  podman stop acb
+   47  podman rm acb
+   48  ll
+   49  podman images
+   50  podman tag localhost/acme/jboss7-eap.01 localhost/acme/jboss7-eap.01:7.2.final
+   51  podman images
+   52  podman tag localhost/acme/jboss7-eap.01 docker:5000/acme/jboss7-eap.01:7.2.final
+   53  podman images
+   54  podman push docker:5000/acme/jboss7-eap.01
+   55  podman save -o eap7-jboss.tar localhost/acme/jboss7-eap.01
+   56  ll
+   57  podman images
+   58  podman run -d --name=acme -p 1244:8080 -p 1290:9990 -p 1281:9901 localhost/acme/jboss7-eap.01
+   59  podman logs --tail 10 acme
+   60  vim Dockerfile 
+   61  vim Dockerfile 
+   62  netstat
+   63  podman build --layers=false -t acme/jboss7-eap.02 .
+   64  ll
+   65  ll
+   66  history
+   67  cd ..
+   68  ll
+   69  ll myproject/
+   70  ll myproject/EX180-exam-handon/
+   71  cp  myproject/EX180-exam-handon/todo-template.json do180/
+   72  cd do180/
+   73  ll
+   74  mkdir oc
+   75  mv todo-template.json  oc/
+   76  cd oc/
+   77  ll
+   78  vim password.txt
+   79  vim password.txt
+   80  vim password.txt
+   81  vim password.txt
+   82  source password.txt 
+   83  cat password.txt 
+   84  oc login -u $username -p $password $api_url
+   85  oc new-project ex01
+   86  oc projects=
+   87  cat todo-template.json | grep quay
+   88  oc new-project ex01
+   89  oc process -f todo-template.json  -p RHT_OCP4_QUAY_USER=cprakash2118 -l app=prod
+   90  oc pods
+   91  oc pod
+   92  oc logs
+   93  oc process -f todo-template.json  -p RHT_OCP4_QUAY_USER=cprakash2118 -l app=prod | oc create -f -
+   94  oc get pods
+   95  oc get pods
+   96  oc get pods
+   97  oc get pods
+   98  oc get pods
+   99  oc get pods
+  100  oc get pods
+  101  oc get pods
+  102  oc get svc
+  103  oc get svc
+  104  oc get svc
+  105  oc get pods
+  106  #oc new-app --name=myapp1 -e MYSQL_USER=acme -e MYSQL_PASSWORD=redhat123 -e MYSQL_DATABASE=acme_db -e MYSQL_HOSTNAME=hostname01 
+  107  history | less
+  108  oc new-app --name=myapp1 -e MYSQL_USER=acme -e MYSQL_PASSWORD=redhat123 -e MYSQL_DATABASE=acme_db -e MYSQL_HOSTNAME=hostname01  registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7-47
+  109  oc get pods
+  110  oc get svc
+  111  oc get pods
+  112  oc get pods
+  113  oc get pods
+  114  oc get svc
+  115  ll
+  116  cd ..
+  117  ll
+  118  cat Dockerfile 
+  119  history | less
+  120  oc get pods
+  121  oc get svc
+  122  ll
+  123  vim Dockerfile 
+  124  vim Dockerfile 
+  125  vim Dockerfile 
+  126  vim Dockerfile 
+  127  vim Dockerfile 
+  128  pwd
+  129  cd oc/
+  130  ll
+  131  mail
+  132  docker login
+  133  podman login
+  134  cd 
+  135  ll
+  136  cd examp/
+  137  ll
+  138  podman build --layers=false -t acme/jboss7-eap.0.1 .
+  139  podman images
+  140  podman rmi -a
+  141  podman images
+  142  podman ps -a
+  143  podman stop  -a
+  144  podman rm -a
+  145  podman rmi -a
+  146  podman rmi -a -f
+  147  podman ps -a
+  148  podman build --layers=false -t acme/jboss7-eap.0.1 .
+  149  podman images
+  150  podman run -d --name acme -p 1244:8080 -p 1245:9990 -p 1246:9999 localhost/acme/jboss7-eap.0.1
+  151  podman ps
+  152  podman logs acme tail -10
+  153  podman logs tail -10 acme
+  154  podman logs tail -10 3de
+  155  podman logs --tail 10 3de
+  156  podman logs --tail 10 acme
+  157  podman ps
+  158  podman stop acme
+  159  podman ps
+  160  podman rm acme
+  161  podman images
+  162  podman tag localhost/acme/jboss7-eap.0.1 localhost/acme/jboss7-eap.0.1:7.2.final
+  163  podman ps
+  164  podman images
+  165  podman tag localhost/acme/jboss7-eap.0.1 docker:5000/acme/jboss7-eap.0.1:7.2.final
+  166  podman images
+  167  podman push docker:5000/acme/jboss7-eap.0.1
+  168  podman save -o jboss.tar localhost/acme/jboss7-eap.0.1
+  169  ll
+  170  ll -ah
+  171  mkdir -p /var/www/gcp
+  172  podman run -d --name app1 -v /var/www/gcp:/var/www/do180 --pod wordpress localhost/acme/jboss7-eap.0.1
+  173  podman run -d --name app1 -v /var/www/gcp:/var/www/do180 --pod wordpress 
+  174  ll
+  175  cd ..
+  176  mkdir test01
+  177  cd examp/
+  178  ll
+  179  cp jboss. ../test01/
+  180  cp jboss.zip  ../test01/
+  181  cd ..
+  182  ll
+  183  cd test01/
+  184  ll
+  185  vim Dockerfile
+  186  vim Dockerfile
+  187  ll
+  188  unzip jboss.zip 
+  189  ll
+  190  vim Dockerfile 
+  191  vim Dockerfile 
+  192  podman images
+  193  podman ps -a
+  194  podman rmi -a -f
+  195  podman images
+  196  cd ..
+  197  ll
+  198  cd examp/
+  199  ll
+  200  cat Dockerfile 
+  201  cd ..
+  202  cd test01/
+  203  ll
+  204  vim Dockerfile 
+  205  podman build --layer=false -t acme-jboss7-eap .
+  206  podman build --layers=false -t acme-jboss7-eap .
+  207  vim Dockerfile 
+  208  podman images
+  209  podman rmi -a -f
+  210  vim Dockerfile 
+  211  podman ps
+  212  podman ps -a
+  213  podman build --layers=false -t acme-jboss7-eap .
+  214  cd ..
+  215  ll
+  216  rm -rf examp/
+  217  cd /home/student/
+  218  ll
+  219  rm  -rf myproject/
+  220  df -h
+  221  cd 
+  222  ll
+  223  cd test01/
+  224  podman rmi -a -f
+  225  podman build --layers=false -t acme-jboss7-eap .
+  226  podman images
+  227  podman run -d  --name acme -p 1244:8080 -p 1245:9990 1246:9999 localhost/acme-jboss7-eap
+  228  podman run -d  --name acme -p 1244:8080 -p 1245:9990 -p 1246:9999 localhost/acme-jboss7-eap
+  229  vim Dockerfile 
+  230  podman rmi -a -f
+  231  podman build --layers=false -t acme-jboss7-eap .
+  232  podman images
+  233  podman run -d  --name acme -p 1244:8080 -p 1245:9990 -p 1246:9999 localhost/acme-jboss7-eap
+  234  podman ps
+  235  podman log --tail 10 acme
+  236  podman logs --tail 10 acme
+  237  podman exec -it acme
+  238  podman exec -it acme bash
+  239  podman stop acme
+  240  podman images
+  241  podman tag localhost/acme-jboss7-eap localhost/acme-jboss7-eap:7.2final
+  242  podman images
+  243  podman tag localhost/acme-jboss7-eap docker:5000/acme-jboss7-eap:7.2final
+  244  podman images
+  245  podman push docker:5000/acme-jboss7-eap 
+  246  podman save -o exam.zip localhost/acme-jboss7-eap
+  247  ll
+  248  ll
+  249  mkdir oc
+  250  cd oc/
+  251  vim password.txt
+  252  vim password.txt
+  253  source password.txt 
+  254  oc login -u $username -p $password $api-url
+  255  vim password.txt
+  256  oc login -u $username -p $password $api_url
+  257  oc newproject test
+  258  oc new-project test
+  259  oc new-project test01
+  260  oc get projects
+  261  cd ..
+  262  ll
+  263  cd ..
+  264  cp /home/student/do180/oc/todo-template.json  /root/test01/oc/
+  265  cd /root/test01/oc/
+  266  ll
+  267  cat todo-template.json  | grep quay
+  268  oc process -f todo-template.json  -p RHT_OCP4_QUAY_USER=cprakash2118 -l app=prod |oc create -f-
+  269  oc get pods
+  270  oc svc
+  271  oc src
+  272  oc get svc
+  273  oc get pods
+  274  oc new-app --name db -e MYSQL_USER=myuser -e MYSQL_PASSWORD=abcd1234 -e HOST=myhostname registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7-47
+  275  oc get pods
+  276  oc get pods
+  277  oc get pods
+  278  oc get pods
+  279  oc get pods
+  280  oc get pods
+  281  oc describe mysql
+  282  oc describe pod  mysql
+  283  oc describe pod  db
+  284  oc get pods
+  285  cd /home/student/
+  286  ll
+  287  cd do180/
+  288  ll
+  289  rm -rf jboss.zip  jboss-eap-7.4
+  290  ll
+  291  df -h
+  292  cd 
+  293  cd test01/
+  294  ll
+  295  cd oc/
+  296  ll
+  297  oc get pods
+  298  oc describe pod  db
+  299  oc get pods
+  300  oc status
+  301  oc delete deployement db 
+  302  oc delete deployment db 
+  303  oc get pods
+  304  oc get deployment
+  305  oc get pods
+  306  oc get svc
+  307  oc delete svc db
+  308  oc delete svc mysql
+  309  oc get svc
+  310  oc get pods
+  311  oc delete pod mysql
+  312  oc get pods
+  313  oc new-app --name qns2 -e MYSQL_USER=myuser -e MYSQL_PASSWORD=redhat123 -e MYSQL_DATABASE=test_secrets -e MYSQL_HOSTNAME=mysql registry.access.redhat.com/rhscl/mysql-57-rhel7:5.7-47
+  314  oc get pods
+  315  oc get svc
+  316  oc dec svc
+  317  oc des svc
+  318  oc describe svc
+  319  oc expose svc qns2
+  320  oc get svc
+  321  oc get route
+  322  oc delete route qns2
+  323  oc expose svc qns2 --hostname qus7.apps.ap45.prod.nextcle.com
+  324  cat /usr/local/etc/ocp4.defaults 
+  325  nslookup abcd.apps.ap45.prod.nextcle.com
+  326  history >>history.txt
